@@ -76,37 +76,11 @@
     //    We have three different declarations, var, const, and let
     //    Var came earlier, const & let more recently
     //    (only use VAR if you really mean it!)
-    let fruit = 'mango';
-    var veg = 'broccoli';
-    const legume = 'lentil';
+    let fruit = "mango";
+    var veg = "broccoli";
+    const legume = "lentil";
     
-    console.log("--start");
-    console.log(fruit);
-    console.log(veg);
-    console.log(legume);
-    
-    if (fruit === "mango") {   // curly braces signal we have entered the if statement's block scope
-        let fruit = "apple";
-        var veg = "leek";
-        //legume = "long bean";  // const should not be overwritten
-      
-      console.log("--in if");
-      console.log(fruit);
-      console.log(veg);
-    }
-    console.log("--out if");
-    console.log(fruit);
-    console.log(veg);
-    
-    // Notice how the "veg" change leaks outside of the "if" scope, but "fruit" does not stay overwritten -- it only changes within the block
-    
-    // let is a "block-scoped" declaration -- it behaves most like what you're familiar with in Python, so use it 
-    // var is usually globally scoped or scoped within a function() -- this can create unexpected issues
-    // Only use var for things you want to access everywhere -- ideally just set them to const at the top of the file if possible
-    
-    // Let's look at scopes in script tags
-    let test = "script tags. how do they work?";
-    
+          
     // Let's look at *hoisting* of variables
     console.log(x);
     var x = 5;
